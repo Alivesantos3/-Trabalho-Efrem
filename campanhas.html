@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fluxo +Alimento</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Gravitas+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="brand">
+                    <img src="fotos/logo.png" alt="Logo Fluxo +Alimento">
+                    <h1 class="logo-text">
+                        <span class="fluxo">Fluxo</span>
+                        <span class="alimento">+Alimento</span>
+                    </h1>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campanhas.html">Campanhas</a></li>
+                    <li><a href="comoDoar.html">Como Doar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="campanhas">
+                <h2>Campanhas Ativas</h2>
+                <div class="filtros">
+                    <input type="text" id="filtroLocal" placeholder="Filtrar por local" />
+                </div>
+                <div class="campanhas" id="listaCampanhas"></div>
+            </section>
+
+            <section id="alimentos">
+                <h2>Alimentos para Doação</h2>
+                <p class="descricao-alimentos">
+                    Confira alguns alimentos essenciais que podem ser doados e fazem grande diferença
+                    nas campanhas ativas.
+                </p>
+
+                <ul class="lista-alimentos">
+                    <li> 🍚 Arroz - 5KG</li>
+                    <li> 🫘 Feijão - 2KG</li>
+                    <li> 🍝 Macarrão - 1KG</li>
+                    <li> 🥫 Óleo - 900ML</li>
+                    <li> 🥛 Leite em pó - 400g</li>
+                    <li> 🍬Açúcar - 2KG</li>
+                    <li> 🧂 Sal - 1KG</li>
+                    <li> 🌽 Fubá - 1KG</li>
+                    <li> 🌾 Farinha de Trigo - 1KG</li>
+                    <li> 🥔 Farinha de Mandioca - 1KG</li>
+                    <li> ☕ Café - 500G</li>
+                    <li> 🍪 Biscoitos - 2 Unidades</li>
+                    <li> 🍅 Molho de Tomate - 2 Unidades</li>
+                    <li> 🍮 Gelatina - 2 Unidades</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+
+                <div class="footer-brand">
+                    <h3>Fluxo +Alimento</h3>
+                    <p>Conectando instituições e comunidades para promover solidariedade e impacto social.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <a href="index.html">Início</a>
+                    <a href="campanhas.html">Campanhas</a>
+                    <a href="comoDoar.html">Como Doar</a>
+                </div>
+
+                <div class="footer-contato">
+                    <h4>Contato</h4>
+                    <p>Email: contato@fluxoalimento.org</p>
+                    <p>IFMG – Campus Ibirité</p>
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Fluxo +Alimento — Projeto de Extensão IFMG
+            </p>
+        </footer>
+
+        <button id="topo" aria-label="Voltar ao topo">↑</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h3 id="modalTitulo"></h3>
+                <p id="modalInfo"></p>
+                <button onclick="fecharModal()">Fechar</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
